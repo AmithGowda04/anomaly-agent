@@ -35,7 +35,8 @@ Last verified: 2026-10-27. `pytest` -> 59 passed. `python -m anomaly_agent --hel
 - 2026-10-27: Claude overwrote requirements.txt, .gitignore, .env.example without reading them first. Rebuilt from what the code imports and reads (pydantic, anthropic, streamlit, pandas, numpy, openpyxl; env vars ANTHROPIC_API_KEY, ANOMALY_AGENT_MODEL, SMTP_*, ALERT_*). Originals were not backed up, so compare against any copy the owner has. A stray pyproject.toml and src/ folder were also added and removed.
 
 ## Publish status (2026-10-27)
-- Local git repo initialised on `main`, one commit, 54 files. NOT pushed yet.
-- Blocked on: repo `AmithGowda04/anomaly-agent` does not exist and Claude cannot create repos. Owner must create it empty (no README), then Claude calls add_repo (access: push) and pushes.
-- After push: deploy app.py on share.streamlit.io, then `python make_portfolio.py --name "Amith Gowda S" --github https://github.com/AmithGowda04/anomaly-agent --demo <streamlit url>`, commit and push the regenerated portfolio/index.html.
-- Portfolio site: https://amithgowda.netlify.app (source repo likely AmithGowda04/amithgowdaportfolio, TypeScript, dark theme #0B0D12). Not yet edited.
+- PUSHED: https://github.com/AmithGowda04/anomaly-agent (branch main, commit 94f67db). Remote HEAD verified equal to local.
+- Next, owner: deploy app.py on share.streamlit.io (repo anomaly-agent, main file app.py) and send the URL.
+- Next, Claude: `python make_portfolio.py --name "Amith Gowda S" --github https://github.com/AmithGowda04/anomaly-agent --demo <streamlit url>`, add the demo link to README, commit and push.
+- Portfolio site: https://amithgowda.netlify.app (source repo likely AmithGowda04/amithgowdaportfolio, TypeScript, dark theme #0B0D12). Not yet edited; needs the owner's project-card format.
+- GitHub Actions workflows (tests.yml, daily_run.yml) have not run yet; check the Actions tab after the push.
