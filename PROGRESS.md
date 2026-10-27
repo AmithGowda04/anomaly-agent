@@ -40,3 +40,8 @@ Last verified: 2026-10-27. `pytest` -> 59 passed. `python -m anomaly_agent --hel
 - Done: `python make_portfolio.py --name "Amith Gowda S" --github https://github.com/AmithGowda04/anomaly-agent --demo <streamlit url>`, add the demo link to README, commit and push.
 - Portfolio site: https://amithgowda.netlify.app (source repo likely AmithGowda04/amithgowdaportfolio, TypeScript, dark theme #0B0D12). Not yet edited; needs the owner's project-card format.
 - GitHub Actions workflows (tests.yml, daily_run.yml) have not run yet; check the Actions tab after the push.
+
+## Portfolio site (2026-10-27)
+- Demo verified working by the owner. Card added to AmithGowda04/amithgowdaportfolio, src/components/Projects.tsx, second position (beside Aadhar Seeding), on branch `add-anomaly-agent-project` (commit 4919834). `main` untouched, so the live site (https://amithgowda.netlify.app) does not show it yet.
+- Next: owner approves, then merge the branch into main (Netlify redeploys). Optional: StatsBand says "8+ Projects Delivered".
+- Last grid row has one card and two empty cells (9 cards, 3 columns); cosmetic.
