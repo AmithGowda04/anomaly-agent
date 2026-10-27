@@ -1,5 +1,7 @@
 # Anomaly Agent
 
+**Live demo:** https://anomaly-agent-aj8iynmb5c93kp2swzxnuc.streamlit.app/ (synthetic sample data; don't upload confidential files)
+
 Watches a business spreadsheet, notices when a metric moves outside its normal range, explains the move in plain English, and sends an alert. The monitoring rules are also written in plain English, so non-programmers can change them.
 
 ```

@@ -36,7 +36,7 @@ Last verified: 2026-10-27. `pytest` -> 59 passed. `python -m anomaly_agent --hel
 
 ## Publish status (2026-10-27)
 - PUSHED: https://github.com/AmithGowda04/anomaly-agent (branch main, commit 94f67db). Remote HEAD verified equal to local.
-- Next, owner: deploy app.py on share.streamlit.io (repo anomaly-agent, main file app.py) and send the URL.
-- Next, Claude: `python make_portfolio.py --name "Amith Gowda S" --github https://github.com/AmithGowda04/anomaly-agent --demo <streamlit url>`, add the demo link to README, commit and push.
+- DEPLOYED (owner-confirmed URL, not verified by Claude): https://anomaly-agent-aj8iynmb5c93kp2swzxnuc.streamlit.app/ . Demo link added to README and portfolio page.
+- Done: `python make_portfolio.py --name "Amith Gowda S" --github https://github.com/AmithGowda04/anomaly-agent --demo <streamlit url>`, add the demo link to README, commit and push.
 - Portfolio site: https://amithgowda.netlify.app (source repo likely AmithGowda04/amithgowdaportfolio, TypeScript, dark theme #0B0D12). Not yet edited; needs the owner's project-card format.
 - GitHub Actions workflows (tests.yml, daily_run.yml) have not run yet; check the Actions tab after the push.
