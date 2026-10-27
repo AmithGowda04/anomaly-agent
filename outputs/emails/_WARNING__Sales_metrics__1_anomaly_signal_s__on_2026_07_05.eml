@@ -1,0 +1,18 @@
+Subject: [WARNING] Sales metrics: 1 anomaly signal(s) on 2026-07-05
+From: anomaly-agent@example.com
+To: team@example.com
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+MIME-Version: 1.0
+
+Warning: 1 anomaly signal(s) on 2026-07-05
+
+- Refunds rose 300.0% versus its recent baseline (32.00 vs 8.00).
+
+Possible explanations (hypotheses to check, not confirmed causes):
+- Refunds are above normal: check recent product quality, delivery or pricing=
+ issues.
+
+Why you are getting this: these values moved outside their recent normal rang=
+e according to the rules configured for this report.
+Repeat alerts for the same signal are suppressed during the cooldown window.

@@ -1,0 +1,27 @@
+[
+  {
+    "date": "2026-05-26",
+    "name": "ticket_surge",
+    "description": "Tickets opened 2.2x and response time 1.9x: a release or outage floods the queue"
+  },
+  {
+    "date": "2026-06-30",
+    "name": "slow_response",
+    "description": "Response time 2.5x and satisfaction -16%: staffing gap"
+  },
+  {
+    "date": "2026-07-28",
+    "name": "escalation_spike",
+    "description": "Escalations 4x: a new issue type the first line cannot handle"
+  },
+  {
+    "date": "2026-08-24",
+    "name": "resolution_stall",
+    "description": "Tickets resolved -55% and backlog 1.6x: agents or tooling offline"
+  },
+  {
+    "date": "2026-09-18",
+    "name": "satisfaction_drop",
+    "description": "Satisfaction -22% with normal response times: a bad policy or release"
+  }
+]

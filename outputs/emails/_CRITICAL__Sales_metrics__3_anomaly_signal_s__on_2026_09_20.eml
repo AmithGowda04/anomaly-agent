@@ -1,0 +1,22 @@
+Subject: [CRITICAL] Sales metrics: 3 anomaly signal(s) on 2026-09-20
+From: anomaly-agent@example.com
+To: team@example.com
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+MIME-Version: 1.0
+
+Critical: 3 anomaly signal(s) on 2026-09-20
+
+- Revenue fell 57.2% versus its recent baseline (215,483 vs 503,710).
+- Conversion rate fell 53.9% versus its recent baseline (1.19% vs 2.58%).
+- Orders fell 56.6% versus its recent baseline (142 vs 328).
+
+Possible explanations (hypotheses to check, not confirmed causes):
+- Traffic is normal but fewer visitors are buying: check checkout, payments a=
+nd site errors.
+- Revenue fell: compare traffic, conversion and order value to find which dri=
+ver moved.
+
+Why you are getting this: these values moved outside their recent normal rang=
+e according to the rules configured for this report.
+Repeat alerts for the same signal are suppressed during the cooldown window.

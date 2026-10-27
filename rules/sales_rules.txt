@@ -1,0 +1,20 @@
+# Sales metrics monitoring rules, written in plain English.
+# One rule per line. Start with "Alert" (critical) or "Warn" (warning).
+# Lines starting with # are comments.
+#
+# Tuning notes
+#  - 28-day baselines: a 14-day version of the first draft fired false alarms on ~3% of
+#    normal days in benchmark.py; 28 days roughly halved that.
+#  - Cost is tiered: a statistical outlier is a Warn, only a big jump is an Alert.
+
+Alert if revenue drops more than 30% below its 28-day average.
+Alert if traffic drops more than 40% below its 28-day average.
+Warn if traffic is unusually high over the last 28 days.
+Warn if orders are unusually low over the last 28 days.
+Warn if conversion rate is unusually low over the last 28 days.
+Warn if refunds are unusually high over the last 28 days.
+Warn if cost is unusually high over the last 28 days.
+Alert if cost rises more than 50% above its 28-day average.
+Warn if conversion rate is below 1%.
+Alert if revenue rises and conversion rate falls over the last 28 days.
+Alert if traffic rises and conversion rate falls over the last 28 days.

@@ -1,0 +1,27 @@
+[
+  {
+    "date": "2026-05-31",
+    "name": "traffic_quality_shift",
+    "description": "Traffic +80% but conversion -40%: low-intent traffic floods in"
+  },
+  {
+    "date": "2026-07-05",
+    "name": "refund_surge",
+    "description": "Refunds jump 4x with no change in orders"
+  },
+  {
+    "date": "2026-07-30",
+    "name": "traffic_collapse",
+    "description": "Traffic falls 60%: acquisition channel outage"
+  },
+  {
+    "date": "2026-08-29",
+    "name": "ad_spend_spike",
+    "description": "Cost jumps 2.2x with revenue unchanged"
+  },
+  {
+    "date": "2026-09-20",
+    "name": "checkout_failure",
+    "description": "Conversion falls 55%: checkout bug, traffic unaffected"
+  }
+]

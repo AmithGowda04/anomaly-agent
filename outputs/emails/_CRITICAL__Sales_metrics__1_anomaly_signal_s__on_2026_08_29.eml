@@ -1,0 +1,18 @@
+Subject: [CRITICAL] Sales metrics: 1 anomaly signal(s) on 2026-08-29
+From: anomaly-agent@example.com
+To: team@example.com
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+MIME-Version: 1.0
+
+Critical: 1 anomaly signal(s) on 2026-08-29
+
+- Cost rose 122.3% versus its recent baseline (369,884 vs 166,388).
+
+Possible explanations (hypotheses to check, not confirmed causes):
+- Spend rose without a matching revenue change: check campaign budgets, bids =
+and billing errors.
+
+Why you are getting this: these values moved outside their recent normal rang=
+e according to the rules configured for this report.
+Repeat alerts for the same signal are suppressed during the cooldown window.

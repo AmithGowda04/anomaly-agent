@@ -1,0 +1,13 @@
+{
+  "rules_file": "sales_rules.txt",
+  "seeds": "200-219",
+  "datasets": 20,
+  "planted_total": 100,
+  "caught_total": 100,
+  "recall": 1.0,
+  "false_days_mean": 2.35,
+  "false_days_max": 6,
+  "normal_days": 147,
+  "false_rate": 0.01598639455782313,
+  "false_critical_mean": 0.05
+}

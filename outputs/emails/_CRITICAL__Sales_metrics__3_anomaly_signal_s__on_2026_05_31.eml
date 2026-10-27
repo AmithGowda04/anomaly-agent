@@ -1,0 +1,20 @@
+Subject: [CRITICAL] Sales metrics: 3 anomaly signal(s) on 2026-05-31
+From: anomaly-agent@example.com
+To: team@example.com
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+MIME-Version: 1.0
+
+Critical: 3 anomaly signal(s) on 2026-05-31
+
+- Conversion rate fell 40.9% versus its recent baseline (1.52% vs 2.57%).
+- Traffic rose 66.5% versus its recent baseline (20,580 vs 12,363).
+- Combined pattern on the same day: traffic rose while conversion rate fell.
+
+Possible explanations (hypotheses to check, not confirmed causes):
+- Traffic rose while conversion fell: the visitor mix may have changed (new c=
+ampaign, low-intent or bot traffic).
+
+Why you are getting this: these values moved outside their recent normal rang=
+e according to the rules configured for this report.
+Repeat alerts for the same signal are suppressed during the cooldown window.

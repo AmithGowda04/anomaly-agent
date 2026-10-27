@@ -1,0 +1,18 @@
+Subject: [WARNING] Sales metrics: 1 anomaly signal(s) on 2026-08-20
+From: anomaly-agent@example.com
+To: team@example.com
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+MIME-Version: 1.0
+
+Warning: 1 anomaly signal(s) on 2026-08-20
+
+- Cost rose 16.3% versus its recent baseline (187,671 vs 161,420).
+
+Possible explanations (hypotheses to check, not confirmed causes):
+- Spend rose without a matching revenue change: check campaign budgets, bids =
+and billing errors.
+
+Why you are getting this: these values moved outside their recent normal rang=
+e according to the rules configured for this report.
+Repeat alerts for the same signal are suppressed during the cooldown window.

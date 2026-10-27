@@ -1,0 +1,16 @@
+logged_at,data_date,metric,rule_key,severity,direction,value,baseline,sent
+2026-10-26T07:39:23,2026-05-09,cost,deviation|cost:up:3.5|w28|mad|mean|None,warning,up,172184.0,151662.0,False
+2026-10-26T07:39:23,2026-05-31,traffic+conversion_rate,pattern|traffic:up+conversion_rate:down|w28|mad|mean|None,critical,pattern,20580.0,12363.0,False
+2026-10-26T07:39:23,2026-05-31,conversion_rate,deviation|conversion_rate:down:3.5|w28|mad|mean|None,warning,down,0.01517,0.02568,False
+2026-10-26T07:39:23,2026-05-31,traffic,deviation|traffic:up:3.5|w28|mad|mean|None,warning,up,20580.0,12363.0,False
+2026-10-26T07:39:23,2026-07-05,refunds,deviation|refunds:up:3.5|w28|mad|mean|None,warning,up,32.0,8.0,False
+2026-10-26T07:39:23,2026-07-18,cost,deviation|cost:up:3.5|w28|mad|mean|None,warning,up,183914.0,161818.5,False
+2026-10-26T07:39:23,2026-07-30,revenue,pct_vs_baseline|revenue:down:30.0|w28|mad|mean|None,critical,down,226975.0,486633.25,False
+2026-10-26T07:39:23,2026-07-30,traffic,pct_vs_baseline|traffic:down:40.0|w28|mad|mean|None,critical,down,5284.0,12559.607142857143,False
+2026-10-26T07:39:23,2026-07-30,orders,deviation|orders:down:3.5|w28|mad|mean|None,warning,down,150.0,329.0,False
+2026-10-26T07:39:23,2026-08-20,cost,deviation|cost:up:3.5|w28|mad|mean|None,warning,up,187671.0,161420.5,False
+2026-10-26T07:39:23,2026-08-29,cost,pct_vs_baseline|cost:up:50.0|w28|mad|mean|None,critical,up,369884.0,166387.82142857142,False
+2026-10-26T07:39:23,2026-08-29,cost,deviation|cost:up:3.5|w28|mad|mean|None,warning,up,369884.0,165510.0,False
+2026-10-26T07:39:23,2026-09-20,revenue,pct_vs_baseline|revenue:down:30.0|w28|mad|mean|None,critical,down,215483.0,503710.4285714286,False
+2026-10-26T07:39:23,2026-09-20,conversion_rate,deviation|conversion_rate:down:3.5|w28|mad|mean|None,warning,down,0.01191,0.025845,False
+2026-10-26T07:39:23,2026-09-20,orders,deviation|orders:down:3.5|w28|mad|mean|None,warning,down,142.0,327.5,False

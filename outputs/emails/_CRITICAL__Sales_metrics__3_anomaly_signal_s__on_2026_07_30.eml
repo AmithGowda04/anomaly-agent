@@ -1,0 +1,22 @@
+Subject: [CRITICAL] Sales metrics: 3 anomaly signal(s) on 2026-07-30
+From: anomaly-agent@example.com
+To: team@example.com
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+MIME-Version: 1.0
+
+Critical: 3 anomaly signal(s) on 2026-07-30
+
+- Revenue fell 53.4% versus its recent baseline (226,975 vs 486,633).
+- Traffic fell 57.9% versus its recent baseline (5,284 vs 12,560).
+- Orders fell 54.4% versus its recent baseline (150 vs 329).
+
+Possible explanations (hypotheses to check, not confirmed causes):
+- Fewer visitors are producing fewer orders: check acquisition channels, camp=
+aigns and tracking.
+- Revenue fell: compare traffic, conversion and order value to find which dri=
+ver moved.
+
+Why you are getting this: these values moved outside their recent normal rang=
+e according to the rules configured for this report.
+Repeat alerts for the same signal are suppressed during the cooldown window.

@@ -1,0 +1,16 @@
+# Customer-support desk monitoring rules, written in plain English.
+# Same sentence patterns as sales_rules.txt; only the metrics and what counts as "bad" differ.
+# One rule per line. Start with "Alert" (critical) or "Warn" (warning).
+
+Alert if tickets opened rises more than 80% above its 28-day average.
+Warn if tickets opened is unusually high over the last 28 days.
+Alert if avg response time hrs rises more than 60% above its 28-day average.
+Warn if avg response time hrs is unusually high over the last 28 days.
+Warn if satisfaction rate is unusually low over the last 28 days.
+Alert if satisfaction rate drops more than 15% below its 28-day average.
+Warn if escalations are unusually high over the last 28 days.
+Warn if tickets resolved is unusually low over the last 28 days.
+Warn if backlog is unusually high over the last 28 days.
+Alert if satisfaction rate is below 70%.
+Alert if tickets opened rises and avg response time hrs rises over the last 28 days.
+Alert if tickets resolved falls and backlog rises over the last 28 days.

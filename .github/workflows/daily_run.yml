@@ -1,0 +1,34 @@
+name: daily-run
+# Runs the watcher on a schedule. DRY RUN: emails are written to outputs/emails/ and uploaded
+# as a build artifact, nothing is sent. To really send, add SMTP_* / ALERT_* repository secrets,
+# pass them as env below, and add --send to the run command.
+#
+# The sample data here is static, so this demonstrates the scheduling mechanism. For real use,
+# replace the data step with whatever fetches your latest report.
+on:
+  schedule:
+    - cron: "30 3 * * *"   # 09:00 India time, every day
+  workflow_dispatch:
+
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install -r requirements.txt
+      - run: python data/generate_data.py
+      # With real data, add `--max-age-days 2` so a stale file is reported as a data problem.
+      # It is left off here because the committed sample file is static and would always warn.
+      - name: Check the latest day
+        run: >
+          python -m anomaly_agent run
+          --data data/business_metrics.xlsx
+          --rules rules/sales_rules.compiled.json
+          --out outputs
+      - uses: actions/upload-artifact@v4
+        with:
+          name: alerts
+          path: outputs/
